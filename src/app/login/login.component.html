@@ -1,0 +1,17 @@
+<div class="auth-container">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+      <div class="input-row">
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" [(ngModel)]="username" name="username" required>
+      </div>
+      <div class="input-row">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" [(ngModel)]="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+      <p>{{ message }}</p>
+    </form>
+    <button class="switch-button" (click)="switchToRegister()">Switch to Register</button>
+  </div>
+  
