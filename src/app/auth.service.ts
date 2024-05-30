@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  private apiUrl = 'http://localhost:8080'; // Replace with your actual API URL
-  private loggedInStatus = false; // Track login status
+  private apiUrl = 'http://localhost:8080';
+  private loggedInStatus = false; 
 
   constructor(private http: HttpClient) { }
 
@@ -24,7 +24,7 @@ export class AuthService {
   }
 
   isLoggedIn(): boolean {
-    // Implement actual check for login status, e.g., check for a valid JWT token or session
+
     return this.loggedInStatus;
   }
 
